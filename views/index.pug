@@ -16,12 +16,19 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>This is a heading</h1>
+        <h2>Enroll in this classroom now and get a discount of 10%(limited period offer)</h2>
+        <!-- <h1>This is a heading</h1> -->
         <p>
             <!--for writing any line we have to add pipe before that line, for all the lines  -->
-            | #{content}
-            | This is plain html
-
+            <!-- | #{content}
+            | This is plain html -->
+            <form action="/" method="POST" id="contact">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="text" name="age" id="age" placeholder="Enter your age">
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address" ></textarea>
+                <textarea name="more" id="more" cols="30" rows="10" placeholder="Tell us about your interests" ></textarea>
+                <button class="btn">Submit</button>
+            </form>
         </p>
     </div>
 </body>
