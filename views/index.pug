@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>        #{title}    </title>
+    style
+        include ../static/style.css
 </head>
 <body>
-    <!-- <nav>
+    <nav>
         <ul>
-            <li>Home</li>
-            <li>Body</li>
-            <li>Contact us</li>
+            <li><a href="/">Home</a></li>
+            <li><a href = "/">Body</a></li>
+            <li><a href = "/">Contact us</a></li>
         </ul>
-    </nav> -->
-    <h1>this is a heading</h1>
-    <p>
-        <!--for writing any line we have to add pipe before that line, for all the lines  -->
-       | #{content}
-       |  this is plain html
+    </nav>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p>
+            <!--for writing any line we have to add pipe before that line, for all the lines  -->
+            | #{content}
+            | This is plain html
 
-    </p>
+        </p>
+    </div>
 </body>
 </html>
